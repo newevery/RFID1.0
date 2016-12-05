@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uhf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/uhf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

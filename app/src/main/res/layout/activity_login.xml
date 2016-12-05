@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ppp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_login_edittext_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="#00FFFFFF"
+            android:drawableLeft="@drawable/ic_username"
+            android:drawablePadding="20dp"
+            android:hint="请输入用户名"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="gl"
+            android:textColorHint="#D6D6D6"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#F2F2F2" />
+
+        <EditText
+            android:id="@+id/et_dlmm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#00FFFFFF"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="20dp"
+            android:hint="请输入密码"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:password="true"
+            android:text="gl123"
+            android:textColorHint="#D6D6D6"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17.5dp"
+        android:layout_marginRight="17.5dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_login_button"
+            android:gravity="center"
+            android:text="账号密码登陆"
+            android:textSize="15sp"
+
+            android:textStyle="bold" />
+
+      <!--  <TextView
+            android:id="@+id/tv_saoma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/selector_login_button"
+            android:gravity="center"
+            android:text="扫码登陆"
+            android:textSize="15dp"
+            android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

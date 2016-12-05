@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/jieyuere"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:text="借阅人登记"
+            android:id="@+id/bt_dengjiJYR"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/textviewbag"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_yongtu"
+            android:layout_width="80dp"
+            android:layout_toRightOf="@+id/bt_dengjiJYR"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_regist_button"
+            android:gravity="center"
+            android:text="选择用途"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/st_saoma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="扫码:"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="当前总数:"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="份"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/bt_shanchu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="删除"
+            />
+
+        <Button
+            android:id="@+id/bt_qingkong"
+            android:layout_width="0dp"
+            android:background="@drawable/textviewbag"
+            android:text="全选"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_queding"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="提交"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dibu"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="张三"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:text="张三"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:text="已连接"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.xe.lzh.rfid.fragment.PlzhuiSuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_daoru"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/et_daoru"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="导入excel"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/et_daboxnum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="输入箱号"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_drboxnum"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="箱号"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/pllistView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/bt_daoru"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <ListView
+        android:id="@+id/pllistViewjieguo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pllistView"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/pllistViewjieguo"
+        android:layout_marginBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/bt_chaku"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="查库"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_plshanchu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="删除"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_zhuisu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="追溯"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/bt_guanbi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/textviewbag"
+            android:text="停止"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

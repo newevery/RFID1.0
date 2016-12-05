@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:minHeight="40dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_1id"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="序号"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_1dh"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:gravity="center"
+        android:text="档号"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_1kh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="库号"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_1dataid"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="档案序号"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_1state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="状态"
+        android:textColor="@color/black" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RFID</string>
+    <string name="action_settings">Settings</string>
+    <string name="jieyue">借阅</string>
+    <string name="guihuan">归还</string>
+    <string name="ruku">入库</string>
+    <string name="pandian">盘点</string>
+    <string name="zhuisu">追溯</string>
+    <string name="tuichu">退出</string>
+    <string name="danghao">档号：</string>
+    <string name="shoudongshuru">请手动输入</string>
+    <string name="jieguo">结果：</string>
+    <string name="yifaxian">已发现</string>
+    <string name="guanbi">关闭</string>
+    <string name="xiangqiqng">详情</string>
+    <string name="zhuangtai">状态：</string>
+    <string name="kuhao">库号：</string>
+    <string name="jieyuere">借阅人：</string>
+    <string name="time">时间：</string>
+    <string name="caozuoren">操作人：</string>
+    <string name="yongtu">用途:</string>
+    <string name="waijie">外借</string>
+    <string name="chayue">查阅</string>
+    <string name="fuyin">复印</string>
+    <string name="ankupandian">按库盘点</string>
+    <string name="quankupandian">全库盘点</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
